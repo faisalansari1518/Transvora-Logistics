@@ -19,7 +19,7 @@
   setHref("[data-map-link]", `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cfg.mapsQuery || "Navi Mumbai Maharashtra")}`);
 
   const standardWhatsAppMessage = `Hello ${cfg.companyName || "Transvora Logistics"}, I would like to discuss a logistics requirement.`;
-  setHref("[data-whatsapp-link]", `https://wa.me/${cfg.whatsapp || "91 9920118935"}?text=${encodeURIComponent(standardWhatsAppMessage)}`);
+  setHref("[data-whatsapp-link]", `https://wa.me/${cfg.whatsapp || "919920118935"}?text=${encodeURIComponent(standardWhatsAppMessage)}`);
 
   $$('[data-social]').forEach((link) => {
     const platform = link.dataset.social;
@@ -76,7 +76,7 @@
 
   const sendWhatsApp = (lines) => {
     const message = lines.filter(Boolean).join("\n");
-    const url = `https://wa.me/${cfg.whatsapp || "91 9920118935"}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${cfg.whatsapp || "919920118935"}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
