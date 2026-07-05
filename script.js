@@ -9,17 +9,17 @@
   const setHref = (selector, value) => $$(selector).forEach((el) => { el.href = value; });
 
   setText("[data-company]", cfg.companyName || "Transvora Logistics");
-  setText("[data-phone-display]", cfg.phoneDisplay || "+91 99999 99999");
+  setText("[data-phone-display]", cfg.phoneDisplay || "+91 9920118935");
   setText("[data-email]", cfg.email || "info@transvoralogistics.in");
   setText("[data-hours]", cfg.hours || "Mon–Sat, 9:00 AM–7:00 PM");
   setText("[data-location]", [cfg.city, cfg.state].filter(Boolean).join(", ") || "Navi Mumbai, Maharashtra");
 
-  setHref("[data-phone-link]", `tel:${cfg.phoneLink || "+919999999999"}`);
+  setHref("[data-phone-link]", `tel:${cfg.phoneLink || "+91 9920118935"}`);
   setHref("[data-email-link]", `mailto:${cfg.email || "info@transvoralogistics.in"}`);
   setHref("[data-map-link]", `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cfg.mapsQuery || "Navi Mumbai Maharashtra")}`);
 
   const standardWhatsAppMessage = `Hello ${cfg.companyName || "Transvora Logistics"}, I would like to discuss a logistics requirement.`;
-  setHref("[data-whatsapp-link]", `https://wa.me/${cfg.whatsapp || "919999999999"}?text=${encodeURIComponent(standardWhatsAppMessage)}`);
+  setHref("[data-whatsapp-link]", `https://wa.me/${cfg.whatsapp || "91 9920118935"}?text=${encodeURIComponent(standardWhatsAppMessage)}`);
 
   $$('[data-social]').forEach((link) => {
     const platform = link.dataset.social;
@@ -76,7 +76,7 @@
 
   const sendWhatsApp = (lines) => {
     const message = lines.filter(Boolean).join("\n");
-    const url = `https://wa.me/${cfg.whatsapp || "919999999999"}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${cfg.whatsapp || "91 9920118935"}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
