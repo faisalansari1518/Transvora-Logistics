@@ -2,9 +2,9 @@
 window.TRANSVORA_CONFIG = {
   companyName: "Transvora Logistics",
   legalName: "Transvora Logistics",
-  phoneDisplay: "+91 99999 99999",
-  phoneLink: "+919999999999",
-  whatsapp: "919999999999",
+  phoneDisplay: "+91 9920118935",
+  phoneLink: "+919920118935",
+  whatsapp: "919920118935",
   email: "info@transvoralogistics.in",
   city: "Navi Mumbai",
   state: "Maharashtra",
